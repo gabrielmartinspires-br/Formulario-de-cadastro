@@ -3,6 +3,9 @@
     font-size: 14px;
     margin: 0;
 }
+body {
+    background-color: lightblue;
+}
 h1 {
     display: flex;
     justify-content: center;
@@ -16,19 +19,34 @@ h1 {
 #dados_profissionais {
     margin-bottom: 5px;
 }
-
 #fieldset {
     display: flex;
     align-items: center;
     flex-direction: column;
-
 }
 fieldset {
     display: flex;
     flex-direction: column;
-    width: 600px;
-    
+    width: 600px;    
+    background-color: #fff;    
+}
+legend {
+    border: 2px solid rgb(110, 110, 110);    
+    background-color: #fff; 
 }
 .botoes {
     width: 625px;
+    margin-bottom: 100px;
+}
+footer#rodape {
+    bottom: 0px;
+    width: 100%;
+    padding: auto;
+    clear: both;   
+    bottom: -20%;
+}
+
+footer#rodape p, a {
+    color: #ffffff;
+    text-align: center;
 }
