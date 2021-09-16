@@ -4,9 +4,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário de pesquisa</title>
+    <title>Formulário de Cadastro</title>
 </head>
 <body>
-    
+    <H1>Formulário de Cadastro</H1>
+    <form action="/login.html" method="GET">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="">Nome:
+                <input type="text" name="nome">
+            </label> <br>
+            <label for="">Idade:
+                <input type="text" name="idade">
+            </label> <br>
+            <label for="">Endereço:
+                <input type="text" name="localizacao">
+            </label> <br>
+            <label for="">Cidade:
+                <input type="text" name="cidade">
+            </label> <br>
+            <label for="">Estado:
+                <select name="estado">
+                    <option value=""> </option>
+                    <option value="sp"> São Paulo </option>
+                    <option value="sc"> Santa Catarina </option>
+                    <option value="pr"> Paraná </option>
+                    <option value="ac"> Acre </option>
+                    <option value="ba"> Bahia </option>
+                    <option value="mg"> Minas Gerais </option>
+                    <option value="df"> Distrito Federal </option>
+                </select>
+            </label>
+       </fieldset>
+       <fieldset>
+            <legend>Dados Profissionais</legend>
+            <label>Escolaridade:
+                <select name="escolaridade">
+                    <option value=""></option>
+                    <option value="ef"> Ensino Fundamental </option>
+                    <option value="em"> Ensino Médio </option>
+                    <option value="nt"> Nível Técnico </option>
+                    <option value="ns"> Nível Superior </option>
+                    <option value="pg"> Pós-graduação </option>
+                    <option value="me"> Mestrado </option>
+                    <option value="dr"> Doutorado </option>
+                 </select>
+                 </label>
+            <p>Natureza do Cargo:</p>                   
+            <label for="">
+                <input type="radio" name="gerencia">Gerência
+                <input type="radio" name="financeiro">Financeiro
+                <input type="radio" name="recepcao">Recepção
+                <input type="radio" name="admin">Administrativo
+                <input type="radio" name="juridico">Jurídico
+            </label>
+            <p>Área de interesse:</p>                   
+            <label for="">
+                <input type="checkbox" name="computacao">Computação
+                <input type="checkbox" name="biologia">Biologia
+                <input type="checkbox" name="meio_ambiente">Meio Ambiente
+                <input type="checkbox" name="engenharia">Engenharia
+                <input type="checkbox" name="história">História
+            </label>
+            <p>Mini-currículo:</p>
+            <textarea name="mini_currculo" cols="60" rows="5"></textarea>            
+       </fieldset>
+       <label for="">
+           <input type="submit" value="Fazer Cadastro">
+           <input type="submit" value="Limpar">
+        </label>
+    </form>
 </body>
 </html>
